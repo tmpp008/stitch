@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Customer Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#0048ff",
+              "background-light": "#f8fafc",
+              "background-dark": "#0f1523",
+              "secondary": "#001d4a",
+              "accent": "#00c6a8"
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+      }
+    </style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-row">
+<!-- SideNavBar -->
+<aside class="flex h-screen min-h-[700px] w-64 flex-col justify-between border-r border-slate-200 bg-white p-4 dark:border-slate-800 dark:bg-background-dark">
+<div class="flex flex-col gap-4">
+<div class="mb-4 flex items-center gap-2 px-2">
+<span class="material-symbols-outlined text-primary text-3xl">home_repair_service</span>
+<h1 class="text-secondary dark:text-white text-xl font-bold">ServeEase</h1>
+</div>
+<div class="flex flex-col gap-2">
+<a class="flex items-center gap-3 rounded-lg bg-primary/10 px-3 py-2 text-primary" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<p class="text-sm font-medium leading-normal">Dashboard</p>
+</a>
+<a class="flex items-center gap-3 rounded-lg px-3 py-2 text-secondary/70 hover:bg-slate-100 dark:text-slate-400 dark:hover:bg-slate-800" href="#">
+<span class="material-symbols-outlined">calendar_month</span>
+<p class="text-sm font-medium leading-normal">Bookings</p>
+</a>
+<a class="flex items-center gap-3 rounded-lg px-3 py-2 text-secondary/70 hover:bg-slate-100 dark:text-slate-400 dark:hover:bg-slate-800" href="#">
+<span class="material-symbols-outlined">person</span>
+<p class="text-sm font-medium leading-normal">Profile</p>
+</a>
+<a class="flex items-center gap-3 rounded-lg px-3 py-2 text-secondary/70 hover:bg-slate-100 dark:text-slate-400 dark:hover:bg-slate-800" href="#">
+<span class="material-symbols-outlined">support_agent</span>
+<p class="text-sm font-medium leading-normal">Support</p>
+</a>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90">
+<span class="truncate">Book a Service</span>
+</button>
+<div class="flex items-center gap-3 px-1 py-2">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="User avatar" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCT05OyGmQQ4_8kSRRYobsRIaknCm7FsyDx92ORqTjwPjGFJIPS5eKp3GwAIr_lHurrZuJW1xDAjvG3tcJBywPmkdePgAKBek4sJVJpnxQYwC69LePC7Nz0sJC4HsrNVsGuQ2MDkD5UaSbrDL16UsX-zF19dTt5VjunU-5uKzC97WmIF5JSOEy0S3dkVvhjT-ulLL-pcjSxMhfMMUPH6O62YVUPA8UrVj2qef-W3dQXViIxhmzUZK9RkIZPZ3G5vPpSjwIJI4WcLKd5");'></div>
+<div class="flex flex-col">
+<h1 class="text-secondary dark:text-white text-base font-medium leading-normal">Ananya Sharma</h1>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal">ananya.sharma@email.com</p>
+</div>
+</div>
+</div>
+</aside>
+<!-- Main Content -->
+<main class="flex-1 overflow-y-auto p-8">
+<div class="mx-auto max-w-5xl">
+<!-- PageHeading -->
+<div class="flex flex-wrap items-center justify-between gap-4">
+<div class="flex min-w-72 flex-col gap-1">
+<p class="text-secondary dark:text-white text-4xl font-black leading-tight tracking-[-0.033em]">Welcome back, Ananya!</p>
+<p class="text-slate-500 dark:text-slate-400 text-base font-normal leading-normal">Manage your bookings and explore new services.</p>
+</div>
+</div>
+<!-- SectionHeader: Continue where you left off -->
+<h2 class="text-secondary dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] pb-3 pt-8">Continue where you left off</h2>
+<!-- Carousel -->
+<div class="flex overflow-x-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+<div class="flex flex-nowrap items-stretch gap-6">
+<div class="flex h-full w-72 flex-none flex-col gap-3">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl" data-alt="AC repair service image" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDkH7JlFqF8kkCS_qiGkqKn_yAe0CwgnZMrL3Dh2_GRwfkQX3ARiihKwkQPN8mdj3DRXMW1wsMSrn-fFv4wzvfxk9dY6oYKqB8hG2hnF5wHkuAEcrKHAVyO35uKVss4HD6J3vcZyhDyuygZCSficdjhGeFTfQY0J8wqDSZCzKm4uiDVIs1llM1WFaQbA7sW1hhTMqt1jfvMNTFtW2z3gPkfGb3149Yn5zaja77qaSQ6CgC6pYBCd75w0-e98cJbFyBtORx4FJescAlZ");'></div>
+<div>
+<p class="text-secondary dark:text-white text-base font-medium leading-normal">AC Repair &amp; Service</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal">In progress</p>
+</div>
+</div>
+<div class="flex h-full w-72 flex-none flex-col gap-3">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl" data-alt="Home cleaning service image" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCkchl3mac-hIF02X62PnMdUwsLpw9wGwGjCDLvQCWet3ZXyPRhaZuHnPluxVDCCVHwbQivqlzrtfs5ahQpw3d3eW4mM8F9tbUfDQdcN-1NZJa5KSKR6Y1kvQ54q-bOk4cGy4wim50S5hj7jQL_GhaduJIaWn0zv2Tsi_FXMnt5BwRHWG4Ykkrexsw-whlVj3QTADED538vv7nxw5HiUXCr6bFl4NsSILsHi85WvHJxjR-PXji3VEwwtxmnI-PzLljRcbhMamZlgvOb");'></div>
+<div>
+<p class="text-secondary dark:text-white text-base font-medium leading-normal">Full Home Cleaning</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal">View details</p>
+</div>
+</div>
+<div class="flex h-full w-72 flex-none flex-col gap-3">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl" data-alt="Plumbing service image" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAZbNGb8jMXBYLi-P78S1vEvWKt4PLzNDjgeezkr_pmR-dpowgQr_V7XZm7SGwkaoZnPJ-WcrZ3c1km6ALjYzWXWNkeSR-80g5_wGBL3otkjjLCuCA0nTm_bV2gJ0BaKeTfr3NivHb1jGfNXZujUEceND79IHTkb2shtx__IVlQbTwtEJ1UxgJrdvuTyRijRWK202TZFQ_MRlEr-oTzVnWITrQc-BfSI63MILBqEz_5HRAMBtbnhP3DyIgnn9hCddSL8sjZSuUDIcU1");'></div>
+<div>
+<p class="text-secondary dark:text-white text-base font-medium leading-normal">Plumbing Services</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal">View details</p>
+</div>
+</div>
+</div>
+</div>
+<!-- SectionHeader: Browse by category -->
+<h2 class="text-secondary dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] pb-3 pt-8">Browse by category</h2>
+<!-- Category Cards Grid -->
+<div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+<div class="flex flex-col items-center justify-center gap-3 rounded-xl border border-slate-200 bg-white p-6 transition-shadow hover:shadow-lg dark:border-slate-800 dark:bg-slate-900/50">
+<div class="flex size-14 items-center justify-center rounded-full bg-primary/10 text-primary">
+<span class="material-symbols-outlined text-3xl">cleaning_services</span>
+</div>
+<p class="text-secondary dark:text-white text-base font-medium">Cleaning</p>
+</div>
+<div class="flex flex-col items-center justify-center gap-3 rounded-xl border border-slate-200 bg-white p-6 transition-shadow hover:shadow-lg dark:border-slate-800 dark:bg-slate-900/50">
+<div class="flex size-14 items-center justify-center rounded-full bg-primary/10 text-primary">
+<span class="material-symbols-outlined text-3xl">plumbing</span>
+</div>
+<p class="text-secondary dark:text-white text-base font-medium">Plumbing</p>
+</div>
+<div class="flex flex-col items-center justify-center gap-3 rounded-xl border border-slate-200 bg-white p-6 transition-shadow hover:shadow-lg dark:border-slate-800 dark:bg-slate-900/50">
+<div class="flex size-14 items-center justify-center rounded-full bg-primary/10 text-primary">
+<span class="material-symbols-outlined text-3xl">electrical_services</span>
+</div>
+<p class="text-secondary dark:text-white text-base font-medium">Electrical</p>
+</div>
+<div class="flex flex-col items-center justify-center gap-3 rounded-xl border border-slate-200 bg-white p-6 transition-shadow hover:shadow-lg dark:border-slate-800 dark:bg-slate-900/50">
+<div class="flex size-14 items-center justify-center rounded-full bg-primary/10 text-primary">
+<span class="material-symbols-outlined text-3xl">carpenter</span>
+</div>
+<p class="text-secondary dark:text-white text-base font-medium">Carpentry</p>
+</div>
+</div>
+<!-- SectionHeader: Your upcoming bookings -->
+<h2 class="text-secondary dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] pb-3 pt-8">Your upcoming bookings</h2>
+<!-- Upcoming Bookings List -->
+<div class="flex flex-col gap-4">
+<div class="flex flex-col gap-4 rounded-xl border border-slate-200 bg-white p-4 sm:flex-row sm:items-center sm:justify-between dark:border-slate-800 dark:bg-slate-900/50">
+<div class="flex items-center gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-12" data-alt="Profile picture of a service professional" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCyyDL3rqZGmsszgEMAlADd1gigTcFjF3HGWagVfvOKHCtl6-UcPS0vzuQT1tQlv9UkUCYJwTRaUMxE2OgGY3rJE0OBqcEIveYEDrOO_LRstASZ0jrw_oyfkDS_54ICTd-gYSdGHXjzR_r7qL8DMHDFoox-gvUbs6XTGNXGviPy5HTBJhbJXRTuj5Qdo2cMvW5VScd7KfY9xV4qthjI1xY9d72WmEC3ueDJNH3Ip1cL8i8NJXLAdTFWANWTGudANRPmntDCCf69EO2B");'></div>
+<div class="flex flex-col">
+<p class="text-secondary dark:text-white text-base font-semibold">Deep Cleaning Service</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm">With Rajesh Kumar</p>
+</div>
+</div>
+<div class="flex flex-col items-start sm:items-end">
+<p class="text-secondary dark:text-white text-base font-medium">Tomorrow, 10:00 AM</p>
+<span class="mt-1 inline-flex items-center rounded-full bg-accent/10 px-2.5 py-0.5 text-sm font-medium text-accent">Confirmed</span>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl border border-slate-200 bg-white p-4 sm:flex-row sm:items-center sm:justify-between dark:border-slate-800 dark:bg-slate-900/50">
+<div class="flex items-center gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-12" data-alt="Profile picture of a service professional" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDpC6oKxF1fL2kzTXNFCjoM5seK8HvJZ-doV7O0QEBgiWsNnjuuXTHIDLW-Ez8Hd4uD6N9SjKj_5Wi7QPWKHsYJySs8AIkDW8u9u0AUdTq3ja0-Ni-dlItYQXUrx1yw-IQR3N_PYD53nYpRH3_PKvCafj429JQCh2ftRVj_BuXZ5j9uDtGuRPwYtu-zi_1VX4aPiNBhHXb2sjG5Eo5SKmDEqk22Me3lqdcKljNNmGY0HxvFSgTsbTYbdckbxUxQndN63frej7n7rzsx");'></div>
+<div class="flex flex-col">
+<p class="text-secondary dark:text-white text-base font-semibold">Leaky Faucet Repair</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm">With Sunil Verma</p>
+</div>
+</div>
+<div class="flex flex-col items-start sm:items-end">
+<p class="text-secondary dark:text-white text-base font-medium">25 Dec 2024, 2:30 PM</p>
+<span class="mt-1 inline-flex items-center rounded-full bg-accent/10 px-2.5 py-0.5 text-sm font-medium text-accent">Confirmed</span>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</body></html>

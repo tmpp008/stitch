@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ServeEase Landing Page</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+      }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#0061ff",
+              "secondary": "#001d4a",
+              "accent": "#00c6a8",
+              "background-light": "#f8fafc",
+              "background-dark": "#0f1523",
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {
+              "DEFAULT": "0.5rem",
+              "lg": "1rem",
+              "xl": "1.5rem",
+              "full": "9999px"
+            },
+            boxShadow: {
+              'soft': '0 10px 30px rgba(15, 23, 42, 0.08)',
+            }
+          },
+        },
+      }
+    </script>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-[#1E293B] dark:text-gray-200">
+<div class="relative w-full flex flex-col">
+<!-- TopNavBar -->
+<header class="sticky top-0 z-50 bg-white dark:bg-background-dark/80 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-16">
+<div class="flex items-center gap-4">
+<div class="flex-shrink-0">
+<svg class="h-6 w-6 text-primary" fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 4H42V17.3333V30.6667H24V44H6V30.6667V17.3333H24V4Z" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-xl font-bold leading-tight tracking-tight text-secondary dark:text-white">ServeEase India</h2>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<nav class="flex items-center gap-8">
+<a class="text-sm font-medium hover:text-primary dark:hover:text-primary" href="#">Services</a>
+<a class="text-sm font-medium hover:text-primary dark:hover:text-primary" href="#">How it works</a>
+<a class="text-sm font-medium hover:text-primary dark:hover:text-primary" href="#">For Providers</a>
+</nav>
+<div class="flex items-center gap-2">
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 text-primary dark:text-primary border border-primary/50 dark:border-primary/50 text-sm font-bold hover:bg-primary/10">
+<span class="truncate">Login</span>
+</button>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-accent text-secondary text-sm font-bold hover:opacity-90">
+<span class="truncate">Sign Up</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</header>
+<main>
+<!-- HeroSection -->
+<section class="relative bg-gradient-to-br from-secondary to-primary text-white overflow-hidden">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="flex flex-col gap-8 text-center lg:text-left">
+<span class="self-center lg:self-start bg-white/10 text-white text-xs font-bold px-3 py-1 rounded-full">New • Now in India</span>
+<h1 class="text-4xl lg:text-6xl font-black leading-tight tracking-tighter">Premium home services, on-demand.</h1>
+<p class="text-lg lg:text-xl text-white/80 max-w-xl mx-auto lg:mx-0">Book verified plumbers, electricians, cleaners and more across India – all in one place.</p>
+<div class="flex flex-col sm:flex-row gap-4 w-full max-w-lg mx-auto lg:mx-0">
+<label class="flex-1">
+<div class="relative">
+<div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-4 text-white/60">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<input class="form-input flex w-full resize-none overflow-hidden rounded-lg text-white bg-white/20 placeholder:text-white/60 focus:ring-2 focus:ring-white/50 border-none h-14 pl-12 pr-4 text-base" placeholder="Enter your city" value=""/>
+</div>
+</label>
+<button class="flex-shrink-0 h-14 px-6 bg-white text-primary text-base font-bold rounded-lg hover:opacity-90">
+<span class="truncate">Explore services</span>
+</button>
+</div>
+<!-- Stats -->
+<div class="flex flex-wrap justify-center lg:justify-start gap-x-6 gap-y-2 pt-4">
+<div class="flex items-center gap-2 text-sm">
+<span class="material-symbols-outlined text-accent" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<span>Verified professionals</span>
+</div>
+<div class="flex items-center gap-2 text-sm">
+<span class="material-symbols-outlined text-accent" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<span>Fast response</span>
+</div>
+<div class="flex items-center gap-2 text-sm">
+<span class="material-symbols-outlined text-accent" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>4.8+ customer ratings</span>
+</div>
+</div>
+</div>
+<div class="relative h-96 lg:h-auto">
+<img class="absolute inset-0 w-full h-full object-contain object-center" data-alt="A phone mockup showing the ServeEase application interface with a booking card for a plumbing service." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYu2WWKuy47qxONfm9PjfdPH3TXmngFiqnyn5R4BZ-ojmd2Zc9zYdBtEHF-pd2BBA3puHdVYpv9LQEIEpVwYqaN0jlAnA7iGKet-irqBRp99n0XvHVaxwmHv44cwy9RRxxOq4cnI-lDHv6uZKwzl9IVVjyT5GBLc1ie_M81rbwbLEyYVCYZ3dhmB27h5AyAj1WZk3wiUHVL8L7rFoTjrRuApZ5rDVZlsGDE6ZJst5QcRASetoZrZ2NYDzLtQqY47vG9Dd9fYQcdX_D"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Popular Services Section -->
+<section class="py-16 sm:py-24">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<h2 class="text-3xl font-bold leading-tight tracking-tight text-center mb-12 dark:text-white">Popular services</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Service Card 1 -->
+<div class="flex flex-col gap-4 p-6 bg-white dark:bg-slate-800/50 rounded-xl shadow-soft transition-all duration-300 hover:-translate-y-1 hover:border-primary border-2 border-transparent">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">plumbing</span>
+</div>
+<div>
+<p class="text-lg font-bold dark:text-white">Plumbing</p>
+<p class="text-sm text-slate-500 dark:text-slate-400">Expert solutions for leaks, clogs, and installations.</p>
+</div>
+</div>
+<!-- Service Card 2 -->
+<div class="flex flex-col gap-4 p-6 bg-white dark:bg-slate-800/50 rounded-xl shadow-soft transition-all duration-300 hover:-translate-y-1 hover:border-primary border-2 border-transparent">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">cleaning_services</span>
+</div>
+<div>
+<p class="text-lg font-bold dark:text-white">Cleaning</p>
+<p class="text-sm text-slate-500 dark:text-slate-400">Thorough home and office cleaning services.</p>
+</div>
+</div>
+<!-- Service Card 3 -->
+<div class="flex flex-col gap-4 p-6 bg-white dark:bg-slate-800/50 rounded-xl shadow-soft transition-all duration-300 hover:-translate-y-1 hover:border-primary border-2 border-transparent">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">electrical_services</span>
+</div>
+<div>
+<p class="text-lg font-bold dark:text-white">Electrical</p>
+<p class="text-sm text-slate-500 dark:text-slate-400">Safe and reliable electrical repairs and installations.</p>
+</div>
+</div>
+<!-- Service Card 4 -->
+<div class="flex flex-col gap-4 p-6 bg-white dark:bg-slate-800/50 rounded-xl shadow-soft transition-all duration-300 hover:-translate-y-1 hover:border-primary border-2 border-transparent">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">ac_unit</span>
+</div>
+<div>
+<p class="text-lg font-bold dark:text-white">AC Repair</p>
+<p class="text-sm text-slate-500 dark:text-slate-400">Efficient AC servicing, repair, and installation.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- How It Works Section -->
+<section class="py-16 sm:py-24">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold leading-tight tracking-tight dark:text-white">How It Works</h2>
+<p class="mt-4 text-lg text-slate-500 dark:text-slate-400">Getting your home needs met is as simple as 1, 2, 3.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+<!-- Step 1 -->
+<div class="flex flex-col items-center gap-4">
+<div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-3xl">home_repair_service</span>
+</div>
+<h3 class="text-xl font-bold dark:text-white">Choose service</h3>
+<p class="text-slate-500 dark:text-slate-400">Select the service you need from our wide range of categories.</p>
+</div>
+<!-- Step 2 -->
+<div class="flex flex-col items-center gap-4">
+<div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-3xl">calendar_month</span>
+</div>
+<h3 class="text-xl font-bold dark:text-white">Pick date &amp; time</h3>
+<p class="text-slate-500 dark:text-slate-400">Choose a convenient time slot that fits your busy schedule.</p>
+</div>
+<!-- Step 3 -->
+<div class="flex flex-col items-center gap-4">
+<div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-3xl">relax</span>
+</div>
+<h3 class="text-xl font-bold dark:text-white">Relax, we handle the rest</h3>
+<p class="text-slate-500 dark:text-slate-400">A verified professional will arrive on time to get the job done right.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Provider CTA Section -->
+<section class="py-16 sm:py-24">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="bg-slate-100 dark:bg-slate-800/50 rounded-xl p-12 text-center">
+<h2 class="text-3xl font-bold dark:text-white">Are you a service professional?</h2>
+<p class="mt-4 max-w-2xl mx-auto text-lg text-slate-600 dark:text-slate-300">Join ServEase India and get high-quality leads with zero upfront cost.</p>
+<div class="mt-8">
+<button class="h-12 px-6 bg-primary text-white text-base font-bold rounded-lg hover:opacity-90">
+<span class="truncate">Become a provider</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-white dark:bg-slate-900 border-t border-gray-200 dark:border-gray-800">
+<div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+<div class="flex flex-col sm:flex-row justify-between items-center gap-4">
+<div class="flex gap-6 text-sm text-slate-500 dark:text-slate-400">
+<a class="hover:text-primary" href="#">About</a>
+<a class="hover:text-primary" href="#">Help</a>
+<a class="hover:text-primary" href="#">Terms</a>
+<a class="hover:text-primary" href="#">Privacy</a>
+</div>
+<p class="text-sm text-slate-500 dark:text-slate-400">© ServEase India 2025 | Made in India 🇮🇳</p>
+</div>
+</div>
+</footer>
+</div>
+</body></html>

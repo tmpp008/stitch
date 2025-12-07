@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Provider Dashboard - ServeEase</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#0048ff",
+              "background-light": "#f5f6f8",
+              "background-dark": "#0f1523",
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style type="text/css">
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root overflow-x-hidden">
+<div class="flex min-h-screen">
+<!-- SideNavBar -->
+<aside class="flex w-64 flex-col bg-white dark:bg-gray-900/50 p-4 border-r border-gray-200 dark:border-gray-800">
+<div class="flex items-center gap-3 p-2 mb-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="ServeEase company logo" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCVC4KCfKlawCgLlVPFVcglaQavesNzdE4Al4muY20by2j2OgQsdIqlnD3UH6ip3Fc4rYvZz3z-zPAH8vyw6mUJ8yZPHkyiigCC7bnvxb_Covo9oof2JTBkrDw1wNgoosKFfRskshAvPh6OR_BkPLlZ_XmFfOWQ_8KRfdZHCvTwFwNhag5sDn7AmD1639atj8sha5iXBA_9gs_2ghrqzWq3IGGpwZ-86jX_cWKQsVUAjSwKNfLXRfLS9iNfK8IkIeIJEZzFF1CAIJcU");'></div>
+<h1 class="text-gray-900 dark:text-white text-base font-bold leading-normal">ServeEase</h1>
+</div>
+<nav class="flex flex-col gap-2 flex-1">
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg bg-primary/20 text-primary" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<p class="text-sm font-medium leading-normal">Dashboard</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800" href="#">
+<span class="material-symbols-outlined">person</span>
+<p class="text-sm font-medium leading-normal">My Profile</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800" href="#">
+<span class="material-symbols-outlined">payments</span>
+<p class="text-sm font-medium leading-normal">Payouts</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800" href="#">
+<span class="material-symbols-outlined">support_agent</span>
+<p class="text-sm font-medium leading-normal">Support</p>
+</a>
+</nav>
+<div class="flex flex-col gap-1 mt-auto">
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800" href="#">
+<span class="material-symbols-outlined">logout</span>
+<p class="text-sm font-medium leading-normal">Log out</p>
+</a>
+</div>
+</aside>
+<!-- Main Content -->
+<main class="flex-1 p-8">
+<div class="layout-content-container flex flex-col max-w-7xl mx-auto flex-1">
+<!-- PageHeading -->
+<div class="flex flex-wrap justify-between gap-3 p-4">
+<div class="flex min-w-72 flex-col gap-2">
+<p class="text-gray-900 dark:text-white text-4xl font-black leading-tight tracking-[-0.033em]">Hello, Ravi Kumar!</p>
+<p class="text-gray-500 dark:text-gray-400 text-base font-normal leading-normal">Here's what your day looks like.</p>
+</div>
+</div>
+<!-- Stats -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
+<div class="flex flex-col gap-2 rounded-xl p-6 border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900/50">
+<p class="text-gray-800 dark:text-gray-200 text-base font-medium leading-normal">Today's bookings</p>
+<p class="text-gray-900 dark:text-white tracking-light text-4xl font-bold leading-tight">5</p>
+<p class="text-green-600 dark:text-green-500 text-sm font-medium leading-normal">+2.5%</p>
+</div>
+<div class="flex flex-col gap-2 rounded-xl p-6 border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900/50">
+<p class="text-gray-800 dark:text-gray-200 text-base font-medium leading-normal">Pending requests</p>
+<p class="text-gray-900 dark:text-white tracking-light text-4xl font-bold leading-tight">2</p>
+<p class="text-red-600 dark:text-red-500 text-sm font-medium leading-normal">-1.0%</p>
+</div>
+<div class="flex flex-col gap-2 rounded-xl p-6 border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900/50">
+<p class="text-gray-800 dark:text-gray-200 text-base font-medium leading-normal">Completed this month</p>
+<p class="text-gray-900 dark:text-white tracking-light text-4xl font-bold leading-tight">32</p>
+<p class="text-green-600 dark:text-green-500 text-sm font-medium leading-normal">+15%</p>
+</div>
+</div>
+<!-- SectionHeader -->
+<h2 class="text-gray-900 dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-8">Upcoming &amp; Pending Bookings</h2>
+<!-- Table -->
+<div class="px-4 py-3 @container">
+<div class="overflow-hidden rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900/50">
+<div class="overflow-x-auto">
+<table class="w-full">
+<thead>
+<tr class="bg-gray-50 dark:bg-gray-900">
+<th class="px-6 py-4 text-left text-gray-600 dark:text-gray-300 text-xs font-medium uppercase tracking-wider">Customer Name</th>
+<th class="px-6 py-4 text-left text-gray-600 dark:text-gray-300 text-xs font-medium uppercase tracking-wider">Service</th>
+<th class="px-6 py-4 text-left text-gray-600 dark:text-gray-300 text-xs font-medium uppercase tracking-wider">Date &amp; Time</th>
+<th class="px-6 py-4 text-left text-gray-600 dark:text-gray-300 text-xs font-medium uppercase tracking-wider">Location</th>
+<th class="px-6 py-4 text-left text-gray-600 dark:text-gray-300 text-xs font-medium uppercase tracking-wider">Status</th>
+<th class="px-6 py-4 text-left text-gray-600 dark:text-gray-300 text-xs font-medium uppercase tracking-wider">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-gray-200 dark:divide-gray-800">
+<tr>
+<td class="px-6 py-4 whitespace-nowrap text-gray-800 dark:text-gray-100 text-sm font-medium">Ananya Sharma</td>
+<td class="px-6 py-4 whitespace-nowrap text-gray-500 dark:text-gray-400 text-sm">Deep Cleaning</td>
+<td class="px-6 py-4 whitespace-nowrap text-gray-500 dark:text-gray-400 text-sm">25 Oct, 10:00 AM</td>
+<td class="px-6 py-4 whitespace-nowrap text-gray-500 dark:text-gray-400 text-sm">Koramangala, BLR</td>
+<td class="px-6 py-4 whitespace-nowrap">
+<span class="inline-flex items-center rounded-full bg-yellow-100 dark:bg-yellow-900/50 px-3 py-1 text-xs font-medium text-yellow-800 dark:text-yellow-300">Pending</span>
+</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm font-medium space-x-2">
+<button class="rounded-lg h-9 px-4 bg-primary text-white text-sm font-medium shadow-sm hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary">Accept</button>
+<button class="rounded-lg h-9 px-4 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200 text-sm font-medium hover:bg-gray-300 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400">Decline</button>
+</td>
+</tr>
+<tr>
+<td class="px-6 py-4 whitespace-nowrap text-gray-800 dark:text-gray-100 text-sm font-medium">Rohan Desai</td>
+<td class="px-6 py-4 whitespace-nowrap text-gray-500 dark:text-gray-400 text-sm">Plumbing Repair</td>
+<td class="px-6 py-4 whitespace-nowrap text-gray-500 dark:text-gray-400 text-sm">25 Oct, 02:00 PM</td>
+<td class="px-6 py-4 whitespace-nowrap text-gray-500 dark:text-gray-400 text-sm">Indiranagar, BLR</td>
+<td class="px-6 py-4 whitespace-nowrap">
+<span class="inline-flex items-center rounded-full bg-blue-100 dark:bg-blue-900/50 px-3 py-1 text-xs font-medium text-blue-800 dark:text-blue-300">Confirmed</span>
+</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+<button class="rounded-lg h-9 px-4 bg-gray-800 dark:bg-gray-200 text-white dark:text-gray-900 text-sm font-medium shadow-sm hover:bg-gray-700 dark:hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">Mark as Complete</button>
+</td>
+</tr>
+<tr>
+<td class="px-6 py-4 whitespace-nowrap text-gray-800 dark:text-gray-100 text-sm font-medium">Priya Mehta</td>
+<td class="px-6 py-4 whitespace-nowrap text-gray-500 dark:text-gray-400 text-sm">AC Servicing</td>
+<td class="px-6 py-4 whitespace-nowrap text-gray-500 dark:text-gray-400 text-sm">26 Oct, 11:30 AM</td>
+<td class="px-6 py-4 whitespace-nowrap text-gray-500 dark:text-gray-400 text-sm">HSR Layout, BLR</td>
+<td class="px-6 py-4 whitespace-nowrap">
+<span class="inline-flex items-center rounded-full bg-blue-100 dark:bg-blue-900/50 px-3 py-1 text-xs font-medium text-blue-800 dark:text-blue-300">Confirmed</span>
+</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+<button class="rounded-lg h-9 px-4 bg-gray-800 dark:bg-gray-200 text-white dark:text-gray-900 text-sm font-medium shadow-sm hover:bg-gray-700 dark:hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">Mark as Complete</button>
+</td>
+</tr>
+<tr>
+<td class="px-6 py-4 whitespace-nowrap text-gray-800 dark:text-gray-100 text-sm font-medium">Vikram Singh</td>
+<td class="px-6 py-4 whitespace-nowrap text-gray-500 dark:text-gray-400 text-sm">Painting</td>
+<td class="px-6 py-4 whitespace-nowrap text-gray-500 dark:text-gray-400 text-sm">27 Oct, 09:00 AM</td>
+<td class="px-6 py-4 whitespace-nowrap text-gray-500 dark:text-gray-400 text-sm">Jayanagar, BLR</td>
+<td class="px-6 py-4 whitespace-nowrap">
+<span class="inline-flex items-center rounded-full bg-green-100 dark:bg-green-900/50 px-3 py-1 text-xs font-medium text-green-800 dark:text-green-300">Completed</span>
+</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+<span class="text-gray-400 dark:text-gray-500">--</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+</body></html>
