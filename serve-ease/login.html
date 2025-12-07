@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ServeEase Login Page</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#0061ff",
+              "background-light": "#f8fafc",
+              "background-dark": "#0f1723",
+              "secondary": "#001d4a",
+              "accent": "#00c6a8"
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+      }
+    </style>
+</head>
+<body class="font-display">
+<div class="relative flex min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root" style='font-family: Inter, "Noto Sans", sans-serif;'>
+<div class="layout-container flex h-full grow flex-col">
+<div class="flex flex-1 items-stretch">
+<div class="flex w-full max-w-full">
+<main class="flex-1">
+<div class="flex h-full">
+<div class="hidden lg:flex flex-1 items-center justify-center bg-secondary p-8 dark:bg-gray-900/50">
+<div class="flex flex-col items-center justify-center gap-8">
+<img alt="Illustration of a clean and modern living room with a person relaxing." class="w-full max-w-lg rounded-xl shadow-2xl" data-alt="A brightly lit, modern living room with stylish furniture, indicating a high-quality home environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUoLEvG8H2bew4jNBfntkcrLxOUz7_bKUGdmzurTd7Al9LbS8UgcJDBu8vlSldCERqW7fl1IN7U6IEFFogWTem0t1I90gVuUENP7SKOOF0uwKrbdcqvdO7Dg9bFvrl67-vxxR9xQKhznfbjhrhZ7V7HfiggutNkdFK4HSFH4QUSHyzPaDihoY8p6x8t5iKjrthLxo1k_QRsPdsbmeRh1ceLwLDw9dSsw_S1TGug60gsHhwVHUjYtU8kk7aT08jhlGLx1c6QPiJ7Y_M"/>
+<div class="text-center text-white">
+<h2 class="text-3xl font-bold">Verified Home Services on Demand</h2>
+<p class="mt-2 max-w-md text-base text-gray-300">Get access to reliable and professional help for all your home needs, right at your doorstep.</p>
+</div>
+</div>
+</div>
+<div class="flex flex-1 flex-col items-center justify-center p-4 sm:p-8">
+<div class="flex w-full max-w-md flex-col gap-8">
+<div class="flex flex-col gap-4 text-left">
+<div class="flex items-center gap-3">
+<svg class="text-primary" fill="none" height="32" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="32" xmlns="http://www.w3.org/2000/svg"><path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7"></path><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path><path d="M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4"></path><path d="M2 7h20"></path><path d="M22 7v3a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7"></path></svg>
+<span class="text-2xl font-bold text-secondary dark:text-gray-200">ServeEase</span>
+</div>
+<div class="flex min-w-72 flex-col gap-2">
+<p class="text-secondary dark:text-white text-4xl font-black leading-tight tracking-[-0.033em]">Log In</p>
+<p class="text-[#4568a1] dark:text-gray-400 text-base font-normal leading-normal">Welcome back! Please enter your details.</p>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<label class="flex flex-col w-full flex-1">
+<p class="text-secondary dark:text-gray-200 text-base font-medium leading-normal pb-2">Email or Username</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-secondary dark:text-gray-200 focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-[#cdd8ea] dark:border-gray-600 bg-background-light dark:bg-background-dark focus:border-primary h-12 placeholder:text-[#4568a1] dark:placeholder:text-gray-500 p-3 text-base font-normal leading-normal" placeholder="Enter your email or username" value=""/>
+</label>
+<label class="flex flex-col w-full flex-1">
+<div class="flex items-center justify-between pb-2">
+<p class="text-secondary dark:text-gray-200 text-base font-medium leading-normal">Password</p>
+<a class="text-primary text-sm font-medium leading-normal hover:underline" href="#">Forgot password?</a>
+</div>
+<div class="flex w-full flex-1 items-stretch rounded-lg border border-[#cdd8ea] dark:border-gray-600 focus-within:ring-2 focus-within:ring-primary/50 focus-within:border-primary">
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-l-lg text-secondary dark:text-gray-200 focus:outline-0 ring-0 border-0 bg-background-light dark:bg-background-dark h-12 placeholder:text-[#4568a1] dark:placeholder:text-gray-500 p-3 text-base font-normal leading-normal" placeholder="Enter your password" type="password" value=""/>
+<button aria-label="Toggle password visibility" class="text-[#4568a1] dark:text-gray-400 flex items-center justify-center pr-3 rounded-r-lg">
+<span class="material-symbols-outlined" data-icon="Eye" data-size="24px" data-weight="regular">visibility</span>
+</button>
+</div>
+</label>
+</div>
+<div class="flex flex-col gap-4">
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 flex-1 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2 dark:focus:ring-offset-background-dark">
+<span class="truncate">Log In</span>
+</button>
+<p class="text-center text-sm text-[#4568a1] dark:text-gray-400">
+                                            Don't have an account? <a class="font-bold text-primary hover:underline" href="#">Sign Up</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+</div>
+</div>
+</body></html>
